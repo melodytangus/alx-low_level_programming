@@ -19,17 +19,4 @@ else
 return (0);
 }
 _putchar('\n');
-
-}
-
-/**
- *main-Check code
- *Return: 0(Success)
- */
-
-int main(void)
-{
-int c;
-_islower(c);
-return (0);
 }
