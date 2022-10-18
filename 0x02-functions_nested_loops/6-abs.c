@@ -1,17 +1,19 @@
 #include "main.h"
+
 /**
- *_abs - returns absolute value
+ *_abs - Begin Here
  *@n: integer value
- *Return: 0(Success)
+ *Computes absolute value and returns the value
+ *Return: Value absolute value of n
  */
+
 int _abs(int n)
 {
-
 if (n >= 0)
 {
 return (n);
 }
-else if (n < 0)
+else
 {
 n *= -1;
 return (n);
