@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- *@c:ASCII Character
+ *_isalpha - begin here
+ *@c: ASCII Character
  *return 1 if c is a letter, otherwise 0
  *Return: 0 (Success)
  */
