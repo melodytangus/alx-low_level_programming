@@ -8,17 +8,14 @@
 
 void print_rev(char *s)
 {
-int i;
-while (*s)
+int count = 0;
+while (count >= 0)
 {
-i++;
-s++;
+if (s[count] == '\0')
+break;
+count++;
 }
-s--;
-for (; i > 0; i--)
-{
-putchar(*s);
-s--;
-}
-putchar('\n');
+for (count--; count >= 0; count--)
+_putchar(s[count]);
+_putchar('\n');
 }
