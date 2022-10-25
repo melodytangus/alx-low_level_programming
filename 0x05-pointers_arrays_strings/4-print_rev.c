@@ -1,21 +1,23 @@
 #include "main.h"
-
 /**
- * print_rev - prints out a string in reverse
- * @s: Pointer to string location
- *Return: Null/Void
- */
-
+* print_rev - Use pointer to change value in memory
+* @s: Pointer to string location
+*Return: Null/Void
+*/
 void print_rev(char *s)
 {
-int count = 0;
-while (count >= 0)
-{
-if (s[count] == '\0')
-break;
-count++;
-}
-for (count--; count >= 0; count--)
-_putchar(s[count]);
-_putchar('\n');
+	int i = 0;
+
+	while (*s)
+	{
+	i++;
+	s++;
+	}
+	s--;
+	for (; i > 0; i--)
+	{
+		putchar(*s);
+		s--;
+	}
+	putchar('\n');
 }
