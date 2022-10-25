@@ -16,7 +16,7 @@ int main(void)
 	{
 		r = rand() % 128;
 		c++;
-/*		printf("%c", r);*/
+		printf("%c", r);
 		sum += r;
 	}
 	printf("%c", sum);
