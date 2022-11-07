@@ -1,0 +1,5 @@
+#!/bin/bash
+gcc -c *.0x04-more_functions_nested_loops
+gcc -c *.0x04-more_functions_nested_loops
+ar -rc libmy.a *.o
+ranlib libmy.a
