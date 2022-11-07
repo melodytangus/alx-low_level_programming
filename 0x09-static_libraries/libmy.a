@@ -1,8 +1,5 @@
 #!/bin/bash
-gcc -c *.0x04-more_functions_nested_loops
-gcc -c *.0x05-pointers_arrays_strings
-gcc -c *.0x06-pointers_arrays_strings
-gcc -c *.0x07-pointers_arrays_strings
+gcc -c 
 ar -rc libmy.a *.o
 ranlib libmy.a
 
