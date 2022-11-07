@@ -1,29 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main -  Prints number of arguements
-* @argc: arguement count
-* @argv: array of pointers to CLI arguement
-* Return: 0
-**/
+* main - prints the addition of positive integers
+*@argc: The argument passed to the program
+*@argv: An array of pointer to the argument
+*Return: 1 for non digit otherwise 0
+*/
 int main(int argc, char *argv[])
 {
-int sum = 0;
+int num, digit, sum = 0;
 
-if (argc == 1)
+for (num = 1 ; num < argc ; num++)
 {
-	printf("0\n");
-	return (0);
+for (digit = 0 ; argv[num][digit] ; digit++)
+{
+if (argv[num][digit] < '0' || argv[num][digit] > '9')
+{
+printf("Error\n");
+
+return (1);
 }
-while (--argc)
-{
-	if (*argv[argc] >= 'a' && *argv[argc] <= 'z')
-	{
-		printf("%s\n", "Error");
-		return (1);
-	}
-	else
-		sum += (atoi(argv[argc]));
+}
+sum += atoi(argv[num]);
 }
 printf("%d\n", sum);
 return (0);
