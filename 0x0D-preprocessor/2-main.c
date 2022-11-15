@@ -1,13 +1,12 @@
 #include <stdio.h>
-#ifndef _FILE_
-#define _FILE_
-#endif
+
 /**
- *main - print the compiled from file
- *Return:0(success)
+ * main - prints the name of the file.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-printf("%s\n", _FILE_);
-return (0);
+	printf("%s\n", __FILE__);
+	return (0);
 }
