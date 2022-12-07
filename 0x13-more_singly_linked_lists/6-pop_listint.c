@@ -1,10 +1,5 @@
-/*
- * File: 6-pop_listint.c
- * Auth: Brennan D Baraban
- */
-
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * pop_listint - Deletes the head node of a listint_t list.
  * @head: A pointer to the address of the
@@ -15,17 +10,17 @@
  */
 int pop_listint(listint_t **head)
 {
-	listint_t *tmp;
-	int ret;
+	int pop;
+	listint_t *current;
 
-	if (*head == NULL)
+	if (head == NULL)
 		return (0);
+	current = *head;
+	if (current)
+	{
+		pop = current->n;
+		*head = current->next;
+	}
 
-	tmp = *head;
-	ret = (*head)->n;
-	*head = (*head)->next;
-
-	free(tmp);
-
-	return (ret);
+	return (pop);
 }
